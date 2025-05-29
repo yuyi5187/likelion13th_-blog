@@ -1,4 +1,3 @@
-/*
 package likelion13th.blog.domain;
 
 import jakarta.persistence.*;
@@ -14,7 +13,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Comment {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(updatable = false)
@@ -37,11 +35,6 @@ public class Comment {
     @Column(nullable = false)
     private LocalDateTime createdAt;
 
-    @PrePersist
-    protected void onCreate() {
-        this.createdAt = LocalDateTime.now();
-    }
 }
 
 
-*/
